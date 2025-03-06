@@ -8,7 +8,6 @@ export default function Login({ navigation }) {
 
   const handleLogin = async () => {
     try {
-      // Authentification avec Firebase
       await auth.signInWithEmailAndPassword(email, password);
       Alert.alert('Succès', 'Connexion réussie !');
       navigation.navigate('CalorieCounter'); // Navigation vers CalorieCounter après connexion réussie
